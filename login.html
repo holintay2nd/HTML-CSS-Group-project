@@ -4,8 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/login/login.css" />
   </head>
   <body>
-    Test 김민수
+    <div id="login-wrap">
+      <section class="login-form">
+        <h1>WEB SHOPPING</h1>
+        <form action="">
+          <div class="int-area">
+            <input type="text" name="id" id="id" autocomplete="off" required />
+            <label for="id">USER NAME</label>
+          </div>
+          <div class="int-area">
+            <input
+              type="password"
+              name="pw"
+              id="pw"
+              autocomplete="off"
+              required
+            />
+            <label for="pw">USER PASSWORD</label>
+          </div>
+          <div class="btn-area">
+            <button type="submit">SIGN IN</button>
+          </div>
+        </form>
+        <div class="caption">
+          <a href="#">SIGN UP</a>
+          <a href="#">Forget Password</a>
+        </div>
+      </section>
+    </div>
+    <!-- login-wrap -->
+    <script>
+      const $subject = document.querySelector(".login-form > h1");
+      let array = ["W", "E", "B", " ", "S", "H", "O", "P", "P", "I", "N", "G"];
+
+      let index = 0;
+      $subject.innerHTML = "";
+
+      const typing = setInterval(() => {
+        $subject.innerHTML += array[index];
+        index++;
+        if (index > array.length) {
+          index = 0;
+          $subject.innerHTML = "";
+        }
+      }, 400);
+    </script>
   </body>
 </html>
