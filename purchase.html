@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purchase-page</title>
+    <link rel="stylesheet" href="css/purchase/purchase.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-wrap">
+                <div class="logo">
+                    <a href="#">WEB SHOPPING</a>
+                </div>
+                <div class="nav-actions">
+                    <span class="nav-item">Navbar 로고 등</span>
+                    <span class="nav-item">로그인</span>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <div class="main-wrap">
+                <div class="content-area">
+                    <div class="main-content">
+                        <section class="order-section">
+                            <h2 class="section-title">주문 내역</h2>
+                            <div class="service-item">
+                                <div class="service-thumbnail">
+                                    
+                                </div>
+                                <div class="service-info">
+                                    <p class="service-title">[HTML/CSS/JS] 홈페이지 템플릿</p>
+                                    <div class="service-description">
+                                        <p>다양한 업종에 바로 적용 가능한 템플릿을 제공합니다.</p>
+                                        <p>디자인·구조·반응형까지 빠른 제작이 가능합니다.</p>
+                                        <p>개발 지식이 없어도 비즈니스에 바로 쓰이는 웹사이트를 완성해보세요.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-options">
+                                <h3 class="option-subtitle">옵션</h3>
+                                <ul class="option-list">
+                                    <li>
+                                        <span> ✓ 맞춤 디자인 제공</span>
+                                    <li>
+                                        <span> ✓ 페이지 수 : 3페이지</span>
+                                    <li>
+                                        <span> ✓ 반응형 웹</span>
+                                    <li>
+                                        <span> ✓ 결제 기능 삽입</span>
+                                    <li>
+                                        <span> ✓ 소스 코드 제공</span>
+                                </ul>
+                            </div>
+                            <div class="order-details">
+                                <table class="detail-table">
+                                    <tr>
+                                        <td>작업일</td>
+                                        <td>5일</td>
+                                    </tr>
+                                    <tr>
+                                        <td>가격</td>
+                                        <td class="price">500,000원</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section class="requester-section">
+                            <h2 class="section-title">요청 사항</h2>
+                            <div class="memo-box">
+                                <textarea
+                                class="memo-textarea"
+                                placeholder="요청사항을 입력해주세요."
+                                maxlength="50"
+                                ></textarea>
+                            </div>
+
+                        </section>
+
+                        <section class="payment-section">
+                            <h2 class="section-title">결제 방법</h2>
+                            <div class="payment-options">
+                                <div class="payment-buttons">
+                                    <input type="radio" name="payment" id="pay-address" checked>
+                                    <label for="pay-address" class="payment-service-btn hover">계좌이체</label>
+
+                                    <input type="radio" name="payment" id="pay-card">
+                                    <label for="pay-card" class="payment-service-btn">신용카드</label>
+
+                                    <input type="radio" name="payment" id="pay-bank">
+                                    <label for="pay-bank" class="payment-service-btn">무통장입금</label>
+
+                                    <input type="radio" name="payment" id="pay-phone">
+                                    <label for="pay-phone" class="payment-service-btn">휴대폰</label>
+                                </div>
+                                <div class="payment-buttons">
+                                    <input type="radio" name="payment" id="pay-toss">
+                                    <label for="pay-toss" class="payment-service-btn">토스페이</label>
+
+                                    <input type="radio" name="payment" id="pay-naver">
+                                    <label for="pay-naver" class="payment-service-btn">네이버페이</label>
+
+                                    <input type="radio" name="payment" id="pay-kakao">
+                                    <label for="pay-kakao" class="payment-service-btn">카카오페이</label>
+
+                                    <input type="radio" name="payment" id="pay-abroad">
+                                    <label for="pay-abroad" class="payment-service-btn">해외 신용카드</label>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    
+                    <aside class="payment-summary">
+                        <div class="summary-box">
+                            <h3 class="summary-title">결제 요약</h3>
+                            <div class="summary-details">
+                                <div class="summary-row">
+                                    <span>주문 금액</span>
+                                    <span>500,000 원</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>수수료</span>
+                                    <span>50,000 원</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>할인</span>
+                                    <span>0 원</span>
+                                </div>
+                            </div>
+                            <div class="total-amount">
+                                <p class="total-label">총 결제 금액 (VAT 포함)</p>
+                                <p class="total-value">550,000원</p>
+                            </div>
+                            <div class="payment-agreement">
+                                <input type="checkbox" id="payment-agree">
+                                <label for="payment-agree">위 내용을 확인하였고, 결제에 동의합니다.</label>
+                            </div>
+                            <button type="button" class="payment-submit-btn">결제하기</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-wrap">
+                <div class="footer-content">
+                    <div>
+                        필성님 footer 삽입 예정
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
