@@ -1,0 +1,18 @@
+footer {
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .text-white {
+    color: white;
+}
+
+footer .logo-img{
+    width: 140px;   /* 원하는 크기로 변경 */
+    height: auto;   /* 비율 유지 */
+  }
+
+.first-line{
+    border-bottom: 1px solid #392d23;
+}
