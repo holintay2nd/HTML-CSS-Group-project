@@ -6,6 +6,151 @@
 a {
   text-decoration: none;
 }
+#wrap {
+  position: relative;
+}
+#wrap > .member {
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  background-color: rgba(244, 245, 246, 0.9);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: none;
+}
+#wrap > .member > .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#wrap > .member > .profile > .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+#wrap > .member > .profile > .member-name {
+  margin: 20px 0;
+}
+#wrap > .member > .profile > .member-user {
+  width: 50px;
+  height: 50px;
+  background-color: #e9dede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 1px solid rgb(173, 171, 171);
+  transition: all 0.3s ease;
+}
+#wrap > .member > .profile > .member-user:hover {
+  background-color: #e6d3d3;
+}
+#wrap > .member > .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+#wrap > .member > .info > .user-id {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+#wrap > .member > .info > .user-id input {
+  min-width: 300px;
+  padding: 10px 5px;
+  border: 1px solid #aeacac;
+}
+#wrap > .member > .info > .name {
+  margin-top: 50px;
+  position: relative;
+}
+#wrap > .member > .info > .name > input {
+  min-width: 300px;
+  padding: 10px 5px;
+  margin-top: 5px;
+}
+#wrap > .member > .info > .name > .name-label {
+  position: absolute;
+  top: -23px;
+  left: 0;
+}
+
+#wrap > .member > .info > .name > .name-label::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 32px;
+}
+#wrap > .member > .gender {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+#wrap > .member > .gender > .sex {
+  margin-bottom: 10px;
+}
+#wrap > .member > .gender > .radio input {
+  margin: 7px 0;
+}
+#wrap > .member > .gender > .radio label {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+#wrap > .member > .birth {
+  width: 300px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+#wrap > .member > .birth > input {
+  width: 300px;
+  padding: 10px;
+}
+#wrap > .member > .membership {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#wrap > .member > .membership > button {
+  width: 300px;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  color: rgb(219, 191, 191);
+  overflow: hidden;
+}
+#wrap > .member > .membership > button::after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+#wrap > .member > .membership > button:hover::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* member */
 #login-wrap {
   position: relative;
   height: 100vh;
@@ -15,6 +160,7 @@ a {
   background: url("../../img/login/login1.jpg") no-repeat center;
   background-size: cover;
 }
+
 #login-wrap::before {
   content: "";
   position: absolute;
