@@ -13,7 +13,7 @@ a {
   position: absolute;
   width: 500px;
   height: 700px;
-  background-color: rgba(244, 245, 246, 0.9);
+  background-color: rgb(200, 202, 218);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,7 +43,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  border: 1px solid rgb(173, 171, 171);
+  border: 1px solid rgb(171, 172, 173);
   transition: all 0.3s ease;
 }
 #wrap > .member > .profile > .member-user:hover {
@@ -140,7 +140,7 @@ a {
   width: 100%;
   display: block;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(147, 145, 145, 0.2);
   top: 0;
   left: 0;
   right: 0;
@@ -148,7 +148,7 @@ a {
   transition: all 0.3s ease;
 }
 #wrap > .member > .membership > button:hover::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(234, 209, 209, 0.2);
 }
 /* member */
 #login-wrap {
@@ -157,7 +157,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../img/login/login1.jpg") no-repeat center;
+
+  /* background: url("../../img/login/login1.jpg") no-repeat center; */
   background-size: cover;
 }
 
@@ -170,6 +171,7 @@ a {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  background-color: #fcfcfc;
 }
 
 #login-wrap > .login-form {
@@ -177,8 +179,9 @@ a {
   z-index: 2;
 }
 #login-wrap > .login-form > h1 {
+  font-style: italic;
   font-size: 32px;
-  color: white;
+  color: rgb(66, 64, 64);
   text-align: center;
   margin-bottom: 60px;
   height: 40px;
