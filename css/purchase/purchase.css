@@ -46,7 +46,7 @@ button:active {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 14px;
+    
     color: #333;
     line-height: 1.5;
 }
@@ -56,43 +56,11 @@ body {
     min-height: 100vh;
 }
 
-#header {
-    border-bottom: 1px solid #e0e0e0;
-}
-
-
-#header > .header-wrap {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 20px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#header .header-wrap .logo a {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#header .header-wrap .nav-actions {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-#header .header-wrap .nav-actions .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #333;
-    font-size: 14px;
-}
-
 #main {
     max-width: 1170px;
     margin: 0 auto;
     padding: 40px 16px;
+    font-size: 14px;
 }
 
 #main > .main-wrap {
@@ -454,26 +422,6 @@ body {
 }
 
 
-
-#footer {
-    background-color: #fff;
-    border-top: 1px solid #e0e0e0;
-    margin-top: 60px;
-}
-
-#footer > .footer-wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 16px 20px;
-}
-
-#footer .footer-wrap .footer-content {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 @media (max-width: 768px) {
   #main .main-wrap .content-area {
