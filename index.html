@@ -1,11 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>템플릿 스토어</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index/header.css">
+    <link rel="stylesheet" href="css/index/main.css">
+    <link rel="stylesheet" href="css/index/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Caveat:wght@700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    Test
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#main">
+          <img src="img/index/logo.png" alt="Logo" class="d-inline-block align-text-top logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="메뉴 열기">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fw-semibold" aria-current="page" href="#main">템플릿</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#category">카테고리</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#pricing">가격안내</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold" href="#guide">사용가이드</a>
+            </li>
+          </ul>
+          <form class="d-flex search-form mx-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="템플릿 검색..." aria-label="검색" />
+            <button class="btn btn-primary" type="submit">검색</button>
+          </form>
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link fw-semibold" href="login.html">로그인</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+ 
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/index/main1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="img/index/main.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/index/main2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="img/index/main3.png" class="d-block w-100" alt="...">
+        </div>
+       </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+    </div>
+
+    <div class="typographic-manifesto mt-5 mb-5">
+       <h2 class="manifesto-text">단 하나의 '프레임'으로 완성하는 </h2>
+       <h2 class="manifesto-text">1인 기업의 시작.</h2>
+       <p>1인 기업을 위한 템플릿 스토어</p>
+    </div>
+      
+    <div class="container mt-5 mb-5">
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿1.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">시선을 머물게 하는 프레임, [Canvas]</h5>
+              <p class="card-text">감각적인 레이아웃과 과감한 타이포그래피의 조화. 단순한 웹사이트를 넘어, 당신의 프로젝트를 하나의 예술 작품으로 큐레이팅합니다. 브랜드의 가치를 압도적인 시각적 경험으로 증명하세요.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿2.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">일상의 결을 닮은 공간, [Slow Mood]</h5>
+              <p class="card-text">유행보다는 취향을, 속도보다는 깊이를 이야기합니다. 단순한 판매 페이지를 넘어 고객의 라이프스타일에 자연스럽게 스며드는 따뜻한 감성 인터페이스를 경험해 보세요. 당신의 옷장 속에 머물고 싶은 웹사이트가 됩니다.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿3.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">일상을 예술로 기록하는, [Dear Diary]</h5>
+              <p class="card-text">흘러가는 시간을 붙잡아 두는 가장 아름다운 방법. 당신의 소소한 일상과 깊은 사유가 하나의 매거진처럼 기록됩니다. 텍스트와 사진이 가장 조화롭게 어우러지는 레이아웃으로 당신만의 이야기를 완성하세요.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿4.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">성공을 증명하는 무대, [The Master]</h5>
+              <p class="card-text">당신의 전문성이 단순한 정보를 넘어 하나의 브랜드가 되는 순간. 권위 있는 리더와 크리에이터를 위해 설계된 고품격 레이아웃으로 지식의 가치를 프리미엄으로 전환하세요. 압도적인 첫인상이 수강생의 신뢰를 완성합니다.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿5.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">공간에 새긴 고요한 숨결, [The Structure]</h5>
+              <p class="card-text">단순한 건물을 넘어, 선과 면이 만나는 찰나의 미학을 담았습니다. 건축가와 공간 디자이너를 위해 설계된 이 템플릿은 당신의 철학이 담긴 프로젝트를 가장 깊이 있고 웅장하게 시각화합니다. 침묵 속에서 느껴지는 구조의 힘을 경험하세요.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿6.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">경계를 허무는 영감의 파동, [Neo Creative]</h5>
+              <p class="card-text">정형화된 틀을 깨고 새로운 트렌드를 제시합니다. 비비드한 컬러감과 자유로운 그리드 배치가 당신의 포트폴리오에 생명력을 불어넣습니다. 앞서가는 감각을 증명하고 싶다면, 이 템플릿이 당신의 가장 강력한 무기가 될 것입니다.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿7.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">내일의 비즈니스를 선점하는 기술, [Next Horizon]</h5>
+              <p class="card-text">혁신적인 솔루션과 테크 스타트업을 위해 설계된 하이엔드 테크 템플릿입니다. 미래지향적인 네온 무드와 정교한 인터페이스가 당신의 서비스가 가진 기술적 우위를 시각적으로 증명합니다. 다음 세대의 표준이 될 비즈니스, 그 압도적인 시작을 함께하세요.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿8.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">자연이 건네는 가장 순수한 대화, [Pure Leaf]</h5>
+              <p class="card-text">가공되지 않은 자연의 생명력을 당신의 일상에 담았습니다. 유기농 원료의 진심과 지속 가능한 가치를 지향하는 브랜드를 위해 설계된 이 템플릿은 방문자에게 숨 가쁜 일상 속 기분 좋은 휴식을 선사합니다. 가장 건강한 방식으로 당신의 브랜드 철학을 전달하세요.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100">
+            <img src="img/index/템플릿9.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">시간을 멈추는 프레임, [Captured Moments]</h5>
+              <p class="card-text">단순한 사진을 넘어 그날의 공기와 감정까지 기록합니다. 포토그래퍼의 시선이 닿는 모든 순간을 하나의 서사로 엮어내는 고감도 갤러리 템플릿입니다. 당신의 렌즈가 발견한 세상의 아름다움을 가장 우아한 방식으로 전시하세요.</p>
+              <a href="purchase.html" class="btn btn-primary btn-sm px-3 mt-auto w-auto">구매하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+    <footer>
+      <div class="container">
+         <div class="row text-white pb-4 pt-4 first-line">
+          <img src="img/index/logo dark.png" class="img-fluid logo-img" alt="...">
+         </div>
+
+         <div class="row text-white pt-5 pb-3 first-line">
+            <div class="col-3 fw-semibold"><a href = "#" class="text-white text-decoration-none"> 공지사항</a></div>
+            <div class="col-3 fw-semibold"><a href = "#" class="text-white text-decoration-none">이용약관</a></div>
+            <div class="col-3 fw-semibold"><a href = "#" class="text-white text-decoration-none">자주묻는질문</a></div>
+            <div class="col-3 fw-semibold"><a href = "#" class="text-white text-decoration-none">고객센터</a></div>
+         </div>
+
+         <div class="text-white d-flex justify-content-between flex-wrap gap-3 pt-4 pb-2">
+          <p class="mb-0">제작자 : 강필성, 김지환, 김민수</p>
+          <p class="footer-under-text-line-p-color mb-0">Copyright 2026. 템플릿 스토어. All rights reserved.</p>
+         </div>
+      </div>
+    </footer>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
