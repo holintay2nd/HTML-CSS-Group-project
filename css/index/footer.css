@@ -27,6 +27,7 @@ footer .logo-img {
 footer .row.first-line a {
     display: inline-block;
     transition: opacity 0.3s ease;
+    padding: 10px;
 }
 
 footer .row.first-line a:hover {
@@ -103,3 +104,15 @@ footer .d-flex p {
     }
 }
 
+.footer-menu {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu .col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
