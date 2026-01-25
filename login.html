@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/login/login.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <section class="member" id="member">
+        <div class="profile">
+          <div class="close" id="close"><i class="fa-solid fa-x"></i></div>
+          <h1 class="member-name">회원가입</h1>
+          <div class="member-user"><i class="fa-solid fa-user"></i></div>
+        </div>
+        <div class="info">
+          <div class="user-id">
+            <input
+              type="email"
+              id="user-id"
+              name="user-id"
+              placeholder="이메일"
+            />
+            <input
+              type="password"
+              id="user-pw"
+              name="user-pw"
+              placeholder="비밀번호"
+            /><input
+              type="password"
+              id="user-pw-com"
+              name="user-pw-com"
+              placeholder="비밀번호 확인"
+            />
+          </div>
+          <div class="name">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="이름을(를) 입력하세요"
+            />
+            <div class="name-label">이름</div>
+          </div>
+        </div>
+        <div class="gender">
+          <div class="sex">성별</div>
+          <div class="radio">
+            <label for="man">
+              <input type="radio" name="gender" id="man" />
+              남성
+            </label>
+            <label for="female">
+              <input type="radio" name="gender" id="female" />
+              여성
+            </label>
+          </div>
+        </div>
+        <div class="birth">
+          <div>생년월일</div>
+          <input type="date" id="birth" />
+        </div>
+        <div class="membership">
+          <button>회원가입 완료</button>
+        </div>
+      </section>
+      <div id="login-wrap">
+        <section class="login-form">
+          <h1>WEB SHOPPING</h1>
+          <form action="#">
+            <div class="int-area">
+              <input
+                type="text"
+                name="id"
+                id="id"
+                autocomplete="off"
+                required
+              />
+              <label for="id">USER NAME</label>
+            </div>
+            <div class="int-area">
+              <input
+                type="password"
+                name="pw"
+                id="pw"
+                autocomplete="off"
+                required
+              />
+              <label for="pw">USER PASSWORD</label>
+            </div>
+            <div class="btn-area">
+              <button type="submit">SIGN IN</button>
+            </div>
+          </form>
+          <div class="caption">
+            <a href="#" id="member-modal">SIGN UP</a>
+            <a href="#">Forget Password</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- login-wrap -->
+    <script>
+      const $subject = document.querySelector(".login-form > h1");
+      let array = ["F", " ", "R", " ", "A", " ", "M", " ", "E"];
+
+      let index = 0;
+      $subject.innerHTML = "";
+
+      const typing = setInterval(() => {
+        $subject.innerHTML += array[index];
+        index++;
+        if (index > array.length) {
+          index = 0;
+          $subject.innerHTML = "";
+        }
+      }, 300);
+      // login
+
+      const $birth = document.querySelector("#birth");
+      const $modal = document.querySelector("#member-modal");
+      const $member = document.querySelector("#member");
+      const $close = document.querySelector("#close");
+      console.log($member);
+      $birth.addEventListener("click", function () {
+        $birth.showPicker();
+      });
+
+      $close.addEventListener("click", function () {
+        $member.style.display = "none";
+      });
+      $modal.addEventListener("click", function () {
+        $member.style.display = "block";
+      });
+      // modal
+    </script>
+  </body>
+</html>
